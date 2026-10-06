@@ -1,0 +1,481 @@
+/* ==========================================================
+   ORDER SUCCESS - PRODUCTION FOOD-TECH PRESENTATION
+   ========================================================== */
+
+.order-success-page {
+  min-height: 100vh;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #f5f7f9;
+  padding: 40px clamp(16px, 3vw, 32px) 80px;
+}
+
+.order-success-card {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 540px;
+  background: var(--canvas-card);
+  border-radius: var(--radius-xl);
+  padding: 36px 32px;
+  border: 1px solid var(--line-subtle);
+  box-shadow: 0 20px 50px -10px rgba(18, 24, 36, 0.12);
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  animation: slideUp 320ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+
+/* =========================
+   SUCCESS ICON
+========================= */
+
+.success-icon {
+  width: 70px;
+  height: 70px;}
+.success-icon-wrap {
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #ecfdf5;
+  border: 4px solid #d1fae5;
+  display: grid;
+  place-items: center;
+}
+
+.success-icon {
+  font-size: 34px;
+  color: #10b981;
+  font-weight: 900;
+  line-height: 1;
+}
+
+
+.order-success-card h1 {
+  margin: 0;
+  font-size: 30px;
+  color: #111827;
+  font-size: 26px;
+  font-weight: 850;
+  letter-spacing: -0.035em;
+  color: var(--ink-primary);
+  margin-bottom: 8px;
+}
+
+
+.success-message {
+  margin-top: 10px;
+  color: #6b7280;
+  font-size: 15px;
+  color: var(--ink-muted);
+  font-size: 14.5px;
+  line-height: 1.5;
+  margin-bottom: 26px;
+}
+
+
+/* =========================
+   TOKEN
+   TOKEN PASS
+========================= */
+.token-pass-card {
+  background: linear-gradient(135deg, #fff7f2 0%, #ffeedf 100%);
+  border: 1.5px solid #ffccb0;
+  border-radius: var(--radius-lg);
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 24px -4px rgba(255, 82, 0, 0.12);
+}
+
+.token-pass-top {
+  padding: 22px 20px 16px;
+}
+
+.token-label {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--brand-dark);
+  margin-bottom: 6px;
+}
+
+.token-display {
+  display: block;
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--brand-primary);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.token-pass-top small {
+  display: block;
+  font-size: 12px;
+  font-weight: 650;
+  color: var(--ink-secondary);
+}
+
+.pass-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 16px;
+}
+
+.pass-dash {
+  width: 100%;
+  border-top: 1.5px dashed #f5b18f;
+}
+
+.pass-notch {
+  width: 16px;
+  height: 16px;
+  background: var(--canvas-card);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+}
+
+.notch-left {
+  left: -8px;
+  border-right: 1.5px solid #ffccb0;
+}
+
+.notch-right {
+  right: -8px;
+  border-left: 1.5px solid #ffccb0;
+}
+
+.token-pass-bottom {
+  padding: 12px 20px 16px;
+  font-size: 12.5px;
+  color: var(--ink-secondary);
+}
+
+.token-pass-bottom span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+.token-pass-bottom strong {
+  color: var(--ink-primary);
+}
+
+
+/* =========================
+   ORDER DETAILS
+========================= */
+
+.order-details-card {
+  text-align: left;
+  margin-top: 25px;
+  background: #fbf9f6;
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  border: 1px solid var(--line-subtle);
+  margin-bottom: 24px;
+}
+
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 0;
+  font-size: 13.5px;
+  margin-bottom: 10px;
+  color: var(--ink-muted);
+}
+
+
+.detail-row span,
+.total-row span,
+.order-status-row span {
+  color: #6b7280;
+}
+
+
+.detail-row strong {
+  color: #111827;
+  color: var(--ink-primary);
+}
+
+
+.details-hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 16px 0;
+  border-top: 1px solid var(--line-subtle);
+  margin: 14px 0;
+}
+
+
+.order-details-card h3 {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: var(--ink-primary);
+  margin-bottom: 12px;
+  color: #111827;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.order-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* =========================
+   ITEMS
+========================= */
+
+.order-item-row {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 8px 0;
+
+  align-items: center;
+  font-size: 14px;
+  color: #374151;
+}
+
+.item-name-qty {
+  color: var(--ink-secondary);
+}
+
+.item-price-calc {
+  color: var(--ink-primary);
+}
+
+
+.total-row {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+
+.total-row strong {
+  font-size: 20px;
+  color: #111827;
+  font-size: 22px;
+  color: var(--brand-primary);
+  font-weight: 850;
+  letter-spacing: -0.03em;
+}
+
+.order-status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13.5px;
+  color: var(--ink-muted);
+}
+
+/* =========================
+   STATUS
+========================= */
+
+.received-badge {
+  padding: 5px 12px;
+
+  border-radius: 20px;
+
+  background: #fef3c7;
+  color: #92400e;
+
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  background: #fff7ed;
+  color: #c2410c;
+  border: 1px solid #ffedd5;
+  font-size: 11.5px;
+  font-weight: 800;
+}
+
+
+/* =========================
+   MESSAGE
+   ACTIONS
+========================= */
+.success-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pickup-message {
+  margin: 22px 0;
+  color: var(--ink-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.download-receipt-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--brand-primary);
+  background: #ffffff;
+  color: var(--brand-primary);
+  font-size: 14.5px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.download-receipt-btn:hover:not(:disabled) {
+  background: var(--brand-light);
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.back-menu-btn {
+  width: 100%;
+
+  padding: 13px 20px;
+
+  padding: 14px;
+  border-radius: var(--radius-md);
+  border: none;
+  border-radius: 10px;
+
+  background: #16a34a;
+  color: white;
+
+  background: var(--brand-gradient);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+
+  font-weight: 800;
+  cursor: pointer;
+
+  transition: 0.2s;
+  box-shadow: 0 6px 20px -2px rgba(255, 82, 0, 0.4);
+  transition: all var(--transition-fast);
+}
+
+
+.back-menu-btn:hover {
+  background: #15803d;
+  background: var(--brand-gradient-hover);
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   NOT FOUND
+========================= */
+
+/* Not Found */
+.order-not-found {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f5f7f9;
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+
+.not-found-card {
+  padding: 36px 28px;
+  background: var(--canvas-card);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--line-subtle);
+  text-align: center;
+
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 18px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  max-width: 400px;
+}
+
+
+.not-found-card h2 {
+  font-size: 22px;
+  color: var(--ink-primary);
+  margin-bottom: 8px;
+}
+
+
+.not-found-card p {
+  color: #6b7280;
+  color: var(--ink-muted);
+  margin-bottom: 20px;
+}
+
+
+.not-found-card button {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+
+  background: #16a34a;
+  color: white;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .order-success-page {
+    padding: 20px 12px;
+  }
+
+  .order-success-card {
+    padding: 25px 20px;
+  }
+
+  .order-success-card h1 {
+    font-size: 25px;
+  }
+
+  .token-box strong {
+    font-size: 36px;
+  }
+
